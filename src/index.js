@@ -1,4 +1,3 @@
-import Scatter from './components/heat-map'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HeatMap from './components/heat-map';
@@ -30,16 +29,14 @@ looker.plugins.visualizations.add({
 
     this._textElement = container.appendChild(document.createElement("div"));
 
-    // I don't know what this does to be honest
     this.heatMap = ReactDOM.render(
       <HeatMap
         done={false}
       />
      ,this._textElement
     );
-
   },
-  // Called when state changes
+
   updateAsync: function(data, element, config, queryResponse, details, done) {
 
     this.clearErrors();

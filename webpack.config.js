@@ -4,7 +4,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var webpackConfig = {
   entry: {
-    src: './src/heat-map.js',
+    src: './src/index.js',
   },
   output: {
     filename: "heat-map.js",
